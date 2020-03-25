@@ -49,12 +49,20 @@ def convert_arabic_to_roman(arabic_number, is_negative=False):
         # here the processing will be done in below steps
         # Step 1. Loop through the tuple of STANDARD_ARABIC_TO_ROMAN
         # and get the arabic number
+        # for each arabic number in the tuple,
         # Step 2. Divide the provided number with arabic number and
         # get the result(no_of_times)
         # Step 3. Add corresponding roman character to the result,
         # that many times with the result in previous step.
         # Step 4. Once addition of roman number is done, then
         # deduct the value of no_of_time* arabic number from the provided number
+        # As example, if the provided number is 127, then first divisible arabic number
+        # will be 100, whose roman character is C. as 127 is divisible by 100
+        # for 1 time, so append the resulting list with C for one time
+        # and once appending of roman number is done, then deduct 100*1 from
+        # 127. So, the resulting number will be 127 -100 = 27.
+        # Then in the next iteration, once 10 comes from the Tuple, it will work
+        # in the same way.
         # Continue the first loop, till it reaches the end of tuple
         # Step 5: Join every roman character in the result list and return
 
