@@ -20,11 +20,11 @@ class converterTest(unittest.TestCase):
     def test_input_positive_integer(self):
         self.assertEqual("CXXVII", converter.convert_arabic_to_roman(127))
 
-    def test_input_float(self):
-        self.assertEqual("XXXVII", converter.convert_arabic_to_roman(37.75))
-
     def test_input_max_limit_positive(self):
         self.assertEqual("MMMCMXCIX", converter.convert_arabic_to_roman(3999))
+
+    def test_input_float(self):
+        self.assertEqual("XXXVII", converter.convert_arabic_to_roman(37.75))
 
     def test_input_negative(self):
         self.assertEqual("-CXXVII", converter.convert_arabic_to_roman(-127, True))
