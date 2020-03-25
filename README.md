@@ -1,6 +1,6 @@
-# Arabic_to_Roman_converter
+# Arabic to Roman converter
 
-# Steps to run the application:
+## Steps to run the application:
 
 Please run all the unit test cases by executing the followimg command
 
